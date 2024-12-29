@@ -1,13 +1,21 @@
 # NLP4Code / LLM as coding assistant
 
+## Навигация
 
 ## Введение
 Прикладная цель проекта - добиться высоких результатов на лидерборде swebench 
 Идея (1) - LLM RAG с примерами кодинга и коррекцией кода
 
-## Описание модели/инструментов/подходов
+## Описание данных/модели/инструментов/подходов
+поскольку swebench содержит 300 issues (на разных языках), причем достаточно сложных и с наличием связанных компонентов, то сначала хотелось бы опробовать подход на данных более простой структуры (см ссылку python-errors)
 
-## Процесс
+- Эмбеддинги: all-MiniLM-L6-v2
+- Индексер: FAISS
+- Generator: flan-t5-base -> text2text-generation /// Потом :  api_gemini -> text2text-generation
+- Валидация ошибок
+
+## Процесс интеракции с моделью
+Будет реализован fastapi, ui через gradio 
 
 ## Результаты
 Идея - добавить собственную метрику (для swebench она может быть прокси-метрикой), которая будет работать следующим образом:
@@ -33,10 +41,7 @@
 | Learning and Adaptation         | Measures how effectively a model can fine-tune or adapt to new coding styles or tasks. | APPS, HumanEval                     | -   |
 
 
-
-## Приложения
-
 ## Ссылки
 
 - [swebench-lite](https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite)
-- [huggingface dataset errors](https://huggingface.co/datasets/TacoPrime/errored_python)
+- [huggingface dataset python-errors](https://huggingface.co/datasets/TacoPrime/errored_python)
