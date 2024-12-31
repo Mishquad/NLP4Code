@@ -15,6 +15,9 @@
 - Generator: flan-t5-base -> text2text-generation /// Потом :  api_gemini -> text2text-generation
 - Валидация ошибок
 
+## Обработка данных (в рамках бейзлайна)
+Взят [датасет](https://huggingface.co/datasets/TacoPrime/errored_python): который содержит промпт, код, исправленный код и описание. После удаления дублей, получилось 7095 записей. Данные в csv и json для удобства в RAG.
+
 ## Процесс интеракции с моделью
 Будет реализован fastapi, ui через gradio 
 
