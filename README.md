@@ -20,6 +20,8 @@ Flask: (```python app.py```)
 ![UI](./screen/mstrl_api.png)
 
 Openhands: см доку (разворачивается локально, вводится api)
+
+
 скрины ниже на примере схлопывания problem_statement и test_patch для самой первой записи swebench_lite/test
 ![UI](./screen/oh1.png)
 ![UI](./screen/oh2.png)
