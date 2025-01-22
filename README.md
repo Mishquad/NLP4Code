@@ -39,15 +39,15 @@ Openhands: см доку (разворачивается локально, вв�
 
 | **Evaluation Criterion**       | **Description**                                                                         | **Common Benchmarks/Tools**         | **Value**|
 |---------------------------------|----------------------------------------------------------------------------------------|-------------------------------------|-----|
-| Functional Correctness          | Measures whether generated code passes all unit tests or solves the given problem.     | HumanEval, MBPP, DS-1000, APPS      | -   |
-| Syntactic Closeness             | Assesses similarity to reference code using metrics like BLEU, CodeBLEU, or ROUGE.     | CodeXGLUE, NaturalCC Toolkit        | -   |
-| Semantic Accuracy               | Evaluates whether the code's logic aligns with the problem requirements.               | APPS, CoderEval                     | -   |
-| Completion Rate                 | Proportion of tasks successfully completed by the model.                               | MathQA-Python, EvoCodeBench         | -   |
-| Execution Accuracy              | Checks if the code runs without errors and provides correct outputs.                   | JuICe, Exec-CSN                     | -   |
-| Efficiency Metrics              | Considers the computational complexity or runtime efficiency of generated code.        | Multipl-E                           | -   |
-| Natural Language Understanding  | Assesses how well the model interprets problem descriptions and maps them to code.     | ClassEval, CodeSearch               | -   |
-| Generalization to New Domains   | Evaluates the model’s performance on unseen or diverse datasets.                       | HumanEval+, Multipl-E               | -   |
-| Explainability                  | Ability to generate readable, maintainable, and well-commented code.                   | None explicitly                     | -   |
+| Functional Correctness          | Measures whether generated code passes all unit tests or solves the given problem.     | HumanEval, MBPP, DS-1000, APPS      | 72%   |
+| Syntactic Closeness             | Assesses similarity to reference code using metrics like BLEU, CodeBLEU, or ROUGE.     | CodeXGLUE, NaturalCC Toolkit        | - (BLEU not suitable?)   |
+| Semantic Accuracy               | Evaluates whether the code's logic aligns with the problem requirements.               | APPS, CoderEval                     | 56%   |
+| Completion Rate                 | Proportion of tasks successfully completed by the model.                               | MathQA-Python, EvoCodeBench         | 65%  |
+| Execution Accuracy              | Checks if the code runs without errors and provides correct outputs.                   | JuICe, Exec-CSN                     | 92%   |
+| Efficiency Metrics              | Considers the computational complexity or runtime efficiency of generated code.        | Multipl-E                           | - no valid baseline   |
+| Natural Language Understanding  | Assesses how well the model interprets problem descriptions and maps them to code.     | ClassEval, CodeSearch               | 100%   |
+| Generalization to New Domains   | Evaluates the model’s performance on unseen or diverse datasets.                       | HumanEval+, Multipl-E               | 26%   |
+| Explainability                  | Ability to generate readable, maintainable, and well-commented code.                   | None explicitly                     | 100%?   |
 | Learning and Adaptation         | Measures how effectively a model can fine-tune or adapt to new coding styles or tasks. | APPS, HumanEval                     | -   |
 
 | **Evaluation Criterion**       | **Formula / Approximation**                                                                                                   | **Example Benchmark**   |
