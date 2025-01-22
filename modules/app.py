@@ -2,7 +2,7 @@ from flask import Flask, request, render_template_string
 from mistral_wrapper import MistralWrapper
 
 app = Flask(__name__)
-mistral_wrapper = MistralWrapper('1TNjHnTyCxWE0K4zUfNyeGt1oMYSDCPV')
+mistral_wrapper = MistralWrapper('1')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
