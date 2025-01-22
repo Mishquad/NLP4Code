@@ -16,7 +16,7 @@
 Модель : Codestral API
 
 ## Процесс интеракции с моделью
-Flask:
+Flask: (```python app.py```)
 ![UI](./screen/mstrl_api.png)
 
 Openhands: см доку (разворачивается локально, вводится api)
