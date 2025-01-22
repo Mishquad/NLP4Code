@@ -17,12 +17,12 @@
 
 ## Процесс интеракции с моделью
 Flask:
-![UI](./screens/mstrl_api.png)
+![UI](./screen/mstrl_api.png)
 
 Openhands: см доку (разворачивается локально, вводится api)
-![UI](./screens/oh1.png)
-![UI](./screens/oh2.png)
-![UI](./screens/oh3.png)
+![UI](./screen/oh1.png)
+![UI](./screen/oh2.png)
+![UI](./screen/oh3.png)
 
 ## Результаты
 Идея - добавить собственную метрику (для swebench она может быть прокси-метрикой), которая будет работать следующим образом:
