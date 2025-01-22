@@ -50,6 +50,20 @@ Openhands: см доку (разворачивается локально, вв�
 | Explainability                  | Ability to generate readable, maintainable, and well-commented code.                   | None explicitly                     | -   |
 | Learning and Adaptation         | Measures how effectively a model can fine-tune or adapt to new coding styles or tasks. | APPS, HumanEval                     | -   |
 
+| **Evaluation Criterion**       | **Formula / Approximation**                                                                                                   | **Example Benchmark**   |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------|--------------------------|
+| **Functional Correctness**      | `# of passed tests / total tests`                                                                                           | HumanEval, MBPP          |
+| **Syntactic Closeness**         | `CodeBLEU(reference_code, generated_code)`                                                                                  | CodeXGLUE, NaturalCC     |
+| **Semantic Accuracy**           | `Score = is_logic_correct()` (compare generated solution logic to problem requirements; heuristic or dataset-specific)      | APPS, CoderEval          |
+| **Completion Rate**             | `# of successfully generated solutions / total prompts`                                                                     | MathQA-Python, EvoCodeBench |
+| **Execution Accuracy**          | `# of scripts executed successfully / total scripts`                                                                        | JulCe, Exec-CSN          |
+| **Efficiency Metrics**          | `Efficiency = 1 - (execution_time / baseline_time)` (execution time compared to baseline or optimal solution)               | Multipl-E                |
+| **Natural Language Understanding** | `Docstring coverage: # of functions with docstrings / total functions`                                                   | ClassEval, CodeSearch    |
+| **Generalization to New Domains** | `Score = performance_on_new_domains / performance_on_training_domains`                                                    | HumanEval+, Multipl-E    |
+| **Explainability**              | `Code readability index (lines of comments / lines of code)`                                                                | Custom heuristic         |
+| **Learning and Adaptation**     | `Improvement = post_tuning_score - pre_tuning_score`                                                                        | APPS, HumanEval          |
+
+
 
 ## Ссылки
 
